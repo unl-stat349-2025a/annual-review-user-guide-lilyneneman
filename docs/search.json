@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "topic.html",
+    "href": "topic.html",
+    "title": "Appendix A — Randomized Response Technique",
+    "section": "",
+    "text": "The Randomized Response Technique is used for handling sensitive questions in surveys. It allows respondents to answer sensitive questions truthfully while maintaining their privacy.\nMy user guide will cover a brief introduction to what RRT is, how it works, and why it is useful. I will also cover when the appropriate time to use RRT and examples of how it might be implemented. It will include how to set up an RRT survey in R and the packages needed to implement it."
+  },
+  {
+    "objectID": "guide.html",
+    "href": "guide.html",
+    "title": "1  User Guide",
+    "section": "",
+    "text": "First off, you should change this section title to something more appropriate.\nNext, well, that’s up to you. Good luck!"
+  },
+  {
+    "objectID": "needs.html",
+    "href": "needs.html",
+    "title": "Appendix B — Needs Assessment",
+    "section": "",
+    "text": "What does someone trying to accomplish your chosen task need help with?\nWhat parts are likely to be tricky?\nWhat resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on."
+  },
+  {
+    "objectID": "task-analysis.html#additional-guidance",
+    "href": "task-analysis.html#additional-guidance",
+    "title": "Appendix C — Task Analysis",
+    "section": "C.1 Additional Guidance",
+    "text": "C.1 Additional Guidance\nYour check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+  }
+]
