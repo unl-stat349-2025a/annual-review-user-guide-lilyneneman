@@ -1,4 +1,4 @@
-# Randomized Response Technique
+# Randomized Response Technique (RRT)
 
 The Randomized Response Technique is used for handling sensitive questions in surveys. It allows respondents to answer sensitive questions truthfully while maintaining their privacy. 
 
