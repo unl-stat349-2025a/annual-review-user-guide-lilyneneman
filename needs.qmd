@@ -1,9 +1,7 @@
 # Needs Assessment {.appendix}
 
-What does someone trying to accomplish your chosen task need help with? 
+Someone trying to use the Randomized Response Technique (RRT) will likely need help understanding how it works and when to use it. They will also likely need help setting up and analyzing an RRT survey in R.
 
-What parts are likely to be tricky? 
+Understanding the concept could be tricky for some individuals but I think the trickiest part would be using R to set up the survey for beginners. 
 
-What resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on.
-
-
+There are many research papers explainin RRT and also online tutorials for R survey setups. There are also R packages that include tutorials for this task.

@@ -3,25 +3,15 @@
 
 Here are some questions to guide you through the process of doing a task analysis. You don't have to specifically answer each one of these (and some may not apply), but they should get you started thinking in the right direction. 
 
-What are the prerequisites, for both knowledge and e.g. software setup? 
+The prerequisites for understanding and setting up at RRT survey are basic knowledge of surveys and statistics. It is also necessary to have R installed with packages like RRT. 
 
-What are the basic requirements for any data that the method is used on? 
-  - Are missing values allowed? 
-  - Should the data be confined within a certain range? 
-  - Does the data have to be approximately normally distributed? 
-
-What are the basic components of the task?
-  - Outline these in a bit more detail
+For the data that this method is used on missing values should be avoided. The data should also fit the expected ranges. Whether that is for numerical or categorical questions. The data distribution is not as important for RRT, but when analyzing the data it may be more important to look into. 
 
 
-What decisions does the user need to be prepared to make on the fly?
+Basic Components of RRT:
+1. Design a survey that includes sensitive questions
+2. Set up the randomization. For examples, coin flips
+3. Collect the responses
+4. Analyze the randomized data
 
-What questions should the user ask of the "first draft" of the product? What adjustments may need to be made?
-
-
-## Additional Guidance 
-
-Your check-in should answer these basic questions (and similar concerns that apply more directly to your topic). 
-
-Once you've completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. 
-This document should remain as an appendix to your main report. 
+The user should ask if the randomization setup is clear and if the questions are appropriate for RRT.
