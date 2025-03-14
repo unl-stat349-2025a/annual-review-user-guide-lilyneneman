@@ -1,5 +1,101 @@
-# User Guide
+# Using Randomized Response Technique for Asking Sensitive Questions in Surveys
 
-First off, you should change this section title to something more appropriate.
+## Introduction
 
-Next, well, that's up to you. Good luck!
+Data collected from surveys is crucial information for researchers and policy-makers. Oftentimes when these surveys contain sensitive questions - such as those related to criminal activity, beliefs, income, gender identity, or personal habits- respondents feel uncomfortable answering honestly. Their fears in answering the questions can lead to biases that cause errors in the data, and can severely compromise the results of the survey.
+
+The Randomized Response Technique (RRT) is a statistical method designed to help solve these problems. RRT ensures the privacy of respondents while helping to keep the validity of they survey results. This guide outlines the importance of RRT, how it reduces errors, and how it can be implemented in R.
+
+## What is Randomized Response Technique?
+
+The Randomized Response Technique is used for handling sensitive questions in surveys. It allows respondents to answer sensitive questions truthfully while maintaining their privacy.
+
+### How RRT Works
+
+1.  Randomization: A randomization device (coin flip, dice roll, card draw etc.) is used to determine whether the respondent answers a sensitive question or a neutral one.
+2.  Response Recording: The person conducting the survey records a yes or no for their answer without knowing the question the respondent has been asked.
+3.  Data Analysis: The researcher uses the randomization probability to estimate the proportion of truthful responses to the sensitive questions.
+
+By using this method, respondents are able to feel secure, not judged for their answer and are able to provide an honest response. Ultimately this allows for much less error in the results and reduces response bias.
+
+## Why is Randomized Response Technique Necessary?
+
+Randomized Response Technique is often used in situation where the respondents of a survey may not feel comfortable answering the questions being asked. When uncomfortable questions are asked in a survey respondents are likely to answer less truthfully. For example, question about criminal activity, personal beliefs, health, or income often result in untruthful answers because respondents don't feel comfortable answering.
+
+### Types of Sensitive Questions Where RRT might be useful
+
+1.  Criminal activity
+2.  Drug Use
+3.  Personal income
+4.  Health conditions
+5.  Political beliefs
+6.  Religious beliefs
+7.  Sexual Orientation
+8.  Gender identity
+9.  Personal experiences
+
+### Reducing Errors Using RRT
+
+When RRT is not used, survey results can be misleading and cause under reporting or over reporting of sensitive behaviors. By using RRT these errors are reduced significantly and respondents feel more comfortable. They are more likely to answer honestly and are more likely to continue further questioning.
+
+## Setting Up an RRT Survey in R
+
+### Step 1: Install Packages
+
+To use RRT in R, the package rrt can be installed.
+
+**install.packages("rrt")**
+
+**library(rrt)**
+
+### Step 2: Define the Sensitive Questions
+
+For example, if you wanted to ask a question to estimate the proportion of people who have used illegal drugs.
+
+**sensitive_question \<- "Have you ever participated in illegal drug use?"**
+
+### Step 3: Implement Randomization
+
+An example of implementing randomization could be using a coin flip:
+
+-   Heads: Answer the sensitive question
+
+-   Tails Answer a neutral question (ex: I"s your favorite color blue?")
+
+**set. seed (123)**
+
+**responses \<- sample(c("Sensitive", "Neutral"), 100, replace = TRUE, prob = c(0.5, 0.5))**
+
+**answers \<- sample(c("Yes", "No"), 100, replace = TRUE)**
+
+**data \<- data. frame responses, answers)**
+
+### Step 4: Data Analysis
+
+Using the randomization probability, we can estimate the proportion of yes responses to the sensitive question.
+
+**sensitive_yes \<- sum(data\$answers\[data\$responses == "Sensitive"\] == "Yes")**
+
+**total_sensitive \<- sum(data\$responses == "Sensitive")**
+
+**prob_sensitive \<- sensitive_yes / total_sensitive**
+
+**cat("Estimated proportion of respondents who answered 'Yes' to the sensitive question:",**
+
+**prob_sensitive**
+
+Using this method in R ensures that the researcher is not aware of which question they were asked while still giving them reliable data with less error.
+
+## Conclusion
+
+In conclusion, the Randomized Response Technique is a very useful tool for conducting surveys and collecting useful data. It improves accuracy with topics that can be sensitive for some people. When RRT is used researchers can minimize errors, ensure privacy, and collect more reliable data. Implementing this method is simple and can significantly improve surveys.
+
+Incorporating RRT can help researchers create a more secure environment. This also results in more people being willing to participate in their research. As a result the conclusions of the survey are higher quality.
+
+For further exploration on RRT, it is important to experiment with this process and ensure the randomization technique and questions fit their needs
+
+@couper2008
+
+@ong2000
+
+@yan2021

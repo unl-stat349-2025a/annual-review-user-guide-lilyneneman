@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-02-11">
+<meta name="dcterms.date" content="2025-03-14">
 
-<title>User Guide: Annual Review Article Topic - 1&nbsp; User Guide</title>
+<title>User Guide: Annual Review Article Topic - 1&nbsp; Using Randomized Response Technique for Asking Sensitive Questions in Surveys</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -75,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./guide.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">User Guide</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./guide.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Using Randomized Response Technique for Asking Sensitive Questions in Surveys</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -109,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./guide.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">User Guide</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Using Randomized Response Technique for Asking Sensitive Questions in Surveys</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -130,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./topic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Topic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Randomized Response Technique (RRT)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -153,14 +172,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
+  <li><a href="#what-is-randomized-response-technique" id="toc-what-is-randomized-response-technique" class="nav-link" data-scroll-target="#what-is-randomized-response-technique"><span class="header-section-number">1.2</span> What is Randomized Response Technique?</a>
+  <ul class="collapse">
+  <li><a href="#how-rrt-works" id="toc-how-rrt-works" class="nav-link" data-scroll-target="#how-rrt-works"><span class="header-section-number">1.2.1</span> How RRT Works</a></li>
+  </ul></li>
+  <li><a href="#why-is-randomized-response-technique-necessary" id="toc-why-is-randomized-response-technique-necessary" class="nav-link" data-scroll-target="#why-is-randomized-response-technique-necessary"><span class="header-section-number">1.3</span> Why is Randomized Response Technique Necessary?</a>
+  <ul class="collapse">
+  <li><a href="#types-of-sensitive-questions-where-rrt-might-be-useful" id="toc-types-of-sensitive-questions-where-rrt-might-be-useful" class="nav-link" data-scroll-target="#types-of-sensitive-questions-where-rrt-might-be-useful"><span class="header-section-number">1.3.1</span> Types of Sensitive Questions Where RRT might be useful</a></li>
+  <li><a href="#reducing-errors-using-rrt" id="toc-reducing-errors-using-rrt" class="nav-link" data-scroll-target="#reducing-errors-using-rrt"><span class="header-section-number">1.3.2</span> Reducing Errors Using RRT</a></li>
+  </ul></li>
+  <li><a href="#setting-up-an-rrt-survey-in-r" id="toc-setting-up-an-rrt-survey-in-r" class="nav-link" data-scroll-target="#setting-up-an-rrt-survey-in-r"><span class="header-section-number">1.4</span> Setting Up an RRT Survey in R</a>
+  <ul class="collapse">
+  <li><a href="#step-1-install-packages" id="toc-step-1-install-packages" class="nav-link" data-scroll-target="#step-1-install-packages"><span class="header-section-number">1.4.1</span> Step 1: Install Packages</a></li>
+  <li><a href="#step-2-define-the-sensitive-questions" id="toc-step-2-define-the-sensitive-questions" class="nav-link" data-scroll-target="#step-2-define-the-sensitive-questions"><span class="header-section-number">1.4.2</span> Step 2: Define the Sensitive Questions</a></li>
+  <li><a href="#step-3-implement-randomization" id="toc-step-3-implement-randomization" class="nav-link" data-scroll-target="#step-3-implement-randomization"><span class="header-section-number">1.4.3</span> Step 3: Implement Randomization</a></li>
+  <li><a href="#step-4-data-analysis" id="toc-step-4-data-analysis" class="nav-link" data-scroll-target="#step-4-data-analysis"><span class="header-section-number">1.4.4</span> Step 4: Data Analysis</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.5</span> Conclusion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">User Guide</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Using Randomized Response Technique for Asking Sensitive Questions in Surveys</span></h1>
 </div>
 
 
@@ -171,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 11, 2025</p>
+      <p class="date">March 14, 2025</p>
     </div>
   </div>
   
@@ -181,10 +223,104 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>First off, you should change this section title to something more appropriate.</p>
-<p>Next, well, that’s up to you. Good luck!</p>
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
+<p>Data collected from surveys is crucial information for researchers and policy-makers. Oftentimes when these surveys contain sensitive questions - such as those related to criminal activity, beliefs, income, gender identity, or personal habits- respondents feel uncomfortable answering honestly. Their fears in answering the questions can lead to biases that cause errors in the data, and can severely compromise the results of the survey.</p>
+<p>The Randomized Response Technique (RRT) is a statistical method designed to help solve these problems. RRT ensures the privacy of respondents while helping to keep the validity of they survey results. This guide outlines the importance of RRT, how it reduces errors, and how it can be implemented in R.</p>
+</section>
+<section id="what-is-randomized-response-technique" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="what-is-randomized-response-technique"><span class="header-section-number">1.2</span> What is Randomized Response Technique?</h2>
+<p>The Randomized Response Technique is used for handling sensitive questions in surveys. It allows respondents to answer sensitive questions truthfully while maintaining their privacy.</p>
+<section id="how-rrt-works" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="how-rrt-works"><span class="header-section-number">1.2.1</span> How RRT Works</h3>
+<ol type="1">
+<li>Randomization: A randomization device (coin flip, dice roll, card draw etc.) is used to determine whether the respondent answers a sensitive question or a neutral one.</li>
+<li>Response Recording: The person conducting the survey records a yes or no for their answer without knowing the question the respondent has been asked.</li>
+<li>Data Analysis: The researcher uses the randomization probability to estimate the proportion of truthful responses to the sensitive questions.</li>
+</ol>
+<p>By using this method, respondents are able to feel secure, not judged for their answer and are able to provide an honest response. Ultimately this allows for much less error in the results and reduces response bias.</p>
+</section>
+</section>
+<section id="why-is-randomized-response-technique-necessary" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="why-is-randomized-response-technique-necessary"><span class="header-section-number">1.3</span> Why is Randomized Response Technique Necessary?</h2>
+<p>Randomized Response Technique is often used in situation where the respondents of a survey may not feel comfortable answering the questions being asked. When uncomfortable questions are asked in a survey respondents are likely to answer less truthfully. For example, question about criminal activity, personal beliefs, health, or income often result in untruthful answers because respondents don’t feel comfortable answering.</p>
+<section id="types-of-sensitive-questions-where-rrt-might-be-useful" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="types-of-sensitive-questions-where-rrt-might-be-useful"><span class="header-section-number">1.3.1</span> Types of Sensitive Questions Where RRT might be useful</h3>
+<ol type="1">
+<li>Criminal activity</li>
+<li>Drug Use</li>
+<li>Personal income</li>
+<li>Health conditions</li>
+<li>Political beliefs</li>
+<li>Religious beliefs</li>
+<li>Sexual Orientation</li>
+<li>Gender identity</li>
+<li>Personal experiences</li>
+</ol>
+</section>
+<section id="reducing-errors-using-rrt" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="reducing-errors-using-rrt"><span class="header-section-number">1.3.2</span> Reducing Errors Using RRT</h3>
+<p>When RRT is not used, survey results can be misleading and cause under reporting or over reporting of sensitive behaviors. By using RRT these errors are reduced significantly and respondents feel more comfortable. They are more likely to answer honestly and are more likely to continue further questioning.</p>
+</section>
+</section>
+<section id="setting-up-an-rrt-survey-in-r" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="setting-up-an-rrt-survey-in-r"><span class="header-section-number">1.4</span> Setting Up an RRT Survey in R</h2>
+<section id="step-1-install-packages" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="step-1-install-packages"><span class="header-section-number">1.4.1</span> Step 1: Install Packages</h3>
+<p>To use RRT in R, the package rrt can be installed.</p>
+<p><strong>install.packages(“rrt”)</strong></p>
+<p><strong>library(rrt)</strong></p>
+</section>
+<section id="step-2-define-the-sensitive-questions" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="step-2-define-the-sensitive-questions"><span class="header-section-number">1.4.2</span> Step 2: Define the Sensitive Questions</h3>
+<p>For example, if you wanted to ask a question to estimate the proportion of people who have used illegal drugs.</p>
+<p><strong>sensitive_question &lt;- “Have you ever participated in illegal drug use?”</strong></p>
+</section>
+<section id="step-3-implement-randomization" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="step-3-implement-randomization"><span class="header-section-number">1.4.3</span> Step 3: Implement Randomization</h3>
+<p>An example of implementing randomization could be using a coin flip:</p>
+<ul>
+<li><p>Heads: Answer the sensitive question</p></li>
+<li><p>Tails Answer a neutral question (ex: I”s your favorite color blue?“)</p></li>
+</ul>
+<p><strong>set. seed (123)</strong></p>
+<p><strong>responses &lt;- sample(c(“Sensitive”, “Neutral”), 100, replace = TRUE, prob = c(0.5, 0.5))</strong></p>
+<p><strong>answers &lt;- sample(c(“Yes”, “No”), 100, replace = TRUE)</strong></p>
+<p><strong>data &lt;- data. frame responses, answers)</strong></p>
+</section>
+<section id="step-4-data-analysis" class="level3" data-number="1.4.4">
+<h3 data-number="1.4.4" class="anchored" data-anchor-id="step-4-data-analysis"><span class="header-section-number">1.4.4</span> Step 4: Data Analysis</h3>
+<p>Using the randomization probability, we can estimate the proportion of yes responses to the sensitive question.</p>
+<p><strong>sensitive_yes &lt;- sum(data$answers[data$responses == “Sensitive”] == “Yes”)</strong></p>
+<p><strong>total_sensitive &lt;- sum(data$responses == “Sensitive”)</strong></p>
+<p><strong>prob_sensitive &lt;- sensitive_yes / total_sensitive</strong></p>
+<p><strong>cat(“Estimated proportion of respondents who answered ‘Yes’ to the sensitive question:”,</strong></p>
+<p><strong>prob_sensitive</strong></p>
+<p>Using this method in R ensures that the researcher is not aware of which question they were asked while still giving them reliable data with less error.</p>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.5</span> Conclusion</h2>
+<p>In conclusion, the Randomized Response Technique is a very useful tool for conducting surveys and collecting useful data. It improves accuracy with topics that can be sensitive for some people. When RRT is used researchers can minimize errors, ensure privacy, and collect more reliable data. Implementing this method is simple and can significantly improve surveys.</p>
+<p>Incorporating RRT can help researchers create a more secure environment. This also results in more people being willing to participate in their research. As a result the conclusions of the survey are higher quality.</p>
+<p>For further exploration on RRT, it is important to experiment with this process and ensure the randomization technique and questions fit their needs</p>
+<p><span class="citation" data-cites="couper2008">Couper et al. (<a href="references.html#ref-couper2008" role="doc-biblioref">2008</a>)</span></p>
+<p><span class="citation" data-cites="ong2000">Ong and Weiss (<a href="references.html#ref-ong2000" role="doc-biblioref">2000</a>)</span></p>
+<p><span class="citation" data-cites="yan2021">Yan (<a href="references.html#ref-yan2021" role="doc-biblioref">2021</a>)</span></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-couper2008" class="csl-entry" role="listitem">
+Couper, Mick P., Eleanor Singer, Frederick G. Conrad, and Robert M. Groves. 2008. <span>“Risk of Disclosure, Perceptions of Risk, and Concerns about Privacy and Confidentiality as Factors in Survey Participation.”</span> <em>Journal of Official Statistics</em> 24 (2): 255275. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3096944/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3096944/</a>.
+</div>
+<div id="ref-ong2000" class="csl-entry" role="listitem">
+Ong, Anthony D., and David J. Weiss. 2000. <span>“The Impact of Anonymity on Responses to Sensitive Questions<span><sup>1</sup></span>.”</span> <em>Journal of Applied Social Psychology</em> 30 (8): 16911708. <a href="https://doi.org/10.1111/j.1559-1816.2000.tb02462.x">https://doi.org/10.1111/j.1559-1816.2000.tb02462.x</a>.
+</div>
+<div id="ref-yan2021" class="csl-entry" role="listitem">
+Yan, Ting. 2021. <span>“Consequences of Asking Sensitive Questions in Surveys.”</span> <em>Annual Review of Statistics and Its Application</em> 8 (Volume 8, 2021): 109127. <a href="https://doi.org/10.1146/annurev-statistics-040720-033353">https://doi.org/10.1146/annurev-statistics-040720-033353</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

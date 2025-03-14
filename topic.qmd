@@ -4,4 +4,3 @@ The Randomized Response Technique is used for handling sensitive questions in su
 
 My user guide will cover a brief introduction to what RRT is, how it works, and why it is useful. I will also cover when the appropriate time to use RRT and examples of how it might be implemented. It will include how to set up an RRT survey in R and the packages needed to implement it. 
 
-
